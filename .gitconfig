@@ -1,0 +1,22 @@
+[color]
+	ui = true
+[color "diff"]
+	commit = magenta
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Danny Tunon
+	email = danieltunon@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = true
+	editor = vim
+[alias]
+	hist = log --pretty=format:'%C(auto)%h %ad | %s%d' --graph --date=short --all --decorate
+  st = status
+  aa = add .
+  co = checkout
+  cm = commit -m
+  prum = pull --rebase upstream master
